@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pesquisar material</title>
+        <link rel="stylesheet" href="assets/css/estilo.css">
+    </head>
+    <body>
+        <!--CAbeçalho-->
+        <header class="topo">
+            <div class="logo-topo">
+                <img src="assets/imagens/logo_cc.png">
+            </div>
+            <div class="rede-sociais">
+                <a href="www.facebook.com.br" class="active"><img src="assets/imagens/logo_facebook.png"></a>
+                <a href="www.instagran.com.br" class="active"><img src="assets/imagens/logo_instagran.png"title"Instagran"></a>
+            </div>
+            <div class="frase">
+                <p>"Design não é só como uma coisa aparenta, é como ela funciona."<br>
+                <strong> –SteveJobs</strong>
+                </p>    
+            </div>
+            <div class="icone">
+                <img src="assets/imagens/icone.png">
+            </div>
+        </header>
+        <main>
+            <div class="menu">
+                <nav>
+                    <ul>
+                    <li><a href="index.html" >inicio</a></li>
+		            <hr>
+                    <li><a href="enviarArquivo.html">enviar</a></li>
+                    <hr>
+                    <li><a href="pesquisar.html"class="active">pesquisar</a></li>
+                    <hr>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+                </nav>
+            </div>
+        <div class="sessaoPrincipal">
+            <section>
+                    <div class="formularioPesquisa">
+                        <h1>Envio de Arquivo</h1>
+
+                        <div class="tipo">
+                            <label>Ensino</label>
+                            <input type="radio" name="tipo" id="tipo1" value="tecnico"> <span>Médio/Técnico</span>
+                            <input type="radio" name="tipo" id="tipo2" value="superior"> <span>Superior</span>
+                        </div>
+                        <div class="curso">
+                            <label>Curso</label>
+                            <select name="curso" id="curso" required>
+                                <optgroup label="Superior">
+                                    <option value="1">Administação</option>
+                                    <option value="2">Cienêscia da Compuatação</option>
+                                    <option value="3">Design</option>
+                                    <option value="4">Engenharia Ambiental e Sanitária</option>
+                                    <option value="5">Engenharia de Bioprocessos</option>
+                                    <option value="6">Engenharia de Computação</option>
+                                    <option value="7">Engenharia Civil</option>
+                                    <option value="8">Engenharia Elétrica</option>
+                                    <option value="9">Engenharia de Produção</option>
+                                    <option value="10">Engenharia Mecânica</option>
+                                    <option value="11">Engenharia de Software</option>
+                                    <option value="12">Engenharia de Telecomunicações</option>
+                                    <option value="13">Sistema de Informação</option>
+                                    <option value="14">Tecnologia em Design de Produto</option>
+                                    <option value="15">Tecnologia em Mídias Interativas</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="disciplina">
+                            <label>Disciplina</label>
+                            <select name="disciplina" id="disciplina" required>
+                                <optgroup label="Disciplinas">
+                                    <option value="SDI005">Álgebra Linear I</option>
+                                    <option value="SDI028">Cálculo I</option>
+                                    <option value="SDI090">Introdução à Programação</option>
+                                    <option value="SDI095">Leitura e Interpretação de Textos</option>
+                                    <option value="SDI106">Metodologia do Trabalho Científico</option>
+                                    <option value="SDI173">Teoria dos Sistemas</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="buttons">
+                            <button type="submit">Buscar</button>
+                            <input type="reset" value="Cancelar">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+         <footer>
+            <div class="info">
+                &copy; 2017. Todos os direitos reservados.
+            </div>
+        </footer>
+        <script src="assets/js/jquery-3.2.0.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
